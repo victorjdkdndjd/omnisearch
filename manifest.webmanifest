@@ -1,0 +1,9 @@
+{
+  "name": "OmniSearch",
+  "short_name": "OmniSearch",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#090c12",
+  "theme_color": "#0b0e14",
+  "description": "Busca híbrida online e local hospedada no GitHub Pages."
+}
