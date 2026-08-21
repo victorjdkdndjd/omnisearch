@@ -1,48 +1,36 @@
-# OmniSearch — GitHub Pages Edition
+# OmniSearch Files — GitHub Pages Edition
 
-Versão feita para ser publicada somente no GitHub Pages.
+Esta versão mostra **somente arquivos**, não resultados de páginas comuns.
 
-## Arquivos
+## Fontes incluídas
 
-Todos ficam na raiz do repositório:
+- Internet Archive
+- Wikimedia Commons
+- GitHub (ZIP do código-fonte)
+- Modrinth
+- Hugging Face
+- npm
+- Zenodo
+- OpenAlex (somente trabalhos com PDF direto)
+- Arquivos locais importados pelo usuário
+
+## Atualizar seu site atual
+
+Substitua estes arquivos na raiz do repositório:
 
 - `index.html`
 - `sw.js`
 - `manifest.webmanifest`
 - `README.md`
 
-Não precisa de Cloudflare, Node.js, servidor, `functions/` nem `site/`.
+O GitHub Pages publica a nova versão automaticamente após o commit.
 
-## Publicar
+## Filtros
 
-1. Abra seu repositório no GitHub.
-2. Envie os 4 arquivos para a tela principal do repositório.
-3. Abra `Settings` → `Pages`.
-4. Em `Build and deployment`, selecione `Deploy from a branch`.
-5. Em Branch, escolha `main` e `/(root)`.
-6. Toque em `Save`.
-7. Aguarde a publicação.
+Há filtros para Minecraft, documentos, imagens, áudio/vídeo, compactados, código/dados, modelos 3D e apps/executáveis.
 
-A URL normalmente será:
+Arquivos potencialmente executáveis ou compactados não são automaticamente removidos; recebem aviso visual.
 
-`https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/`
+## Observação
 
-## Pesquisa
-
-O navegador consulta diretamente APIs públicas de:
-
-- Wikipédia
-- GitHub
-- Stack Overflow
-- Hacker News
-- Open Library
-
-Também há índice local e atalhos para abrir a consulta no Google, Bing e DuckDuckGo.
-
-## Limitação
-
-O GitHub Pages não executa backend. Portanto, mecanismos de busca que não permitem acesso direto pelo navegador não podem ter seus resultados copiados para dentro do OmniSearch sem API/backend adicional.
-
-## Offline
-
-Após abrir o site uma vez, o Service Worker tenta manter a interface em cache. A busca local continua funcionando offline; fontes online precisam de conexão.
+Como o site roda apenas no GitHub Pages, ele depende das APIs públicas aceitarem chamadas diretas do navegador. Uma fonte pode ficar temporariamente indisponível por CORS, limite de requisições ou mudanças na API.
