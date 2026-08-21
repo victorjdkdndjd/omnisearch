@@ -1,9 +1,9 @@
 {
-  "name": "OmniSearch Files+",
-  "short_name": "OmniFiles+",
+  "name": "OmniSearch Games & Apps",
+  "short_name": "OmniGames",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#080c12",
   "theme_color": "#090d14",
-  "description": "Buscador de arquivos com ícones/prévias e múltiplas fontes, hospedado no GitHub Pages."
+  "description": "Busca de arquivos de jogos, mods e aplicativos hospedada no GitHub Pages."
 }

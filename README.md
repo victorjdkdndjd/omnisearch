@@ -1,52 +1,43 @@
-# OmniSearch Files+ — GitHub Pages
+# OmniSearch Games & Apps
 
-Nova versão com **ícones/prévias de arquivos** e mais fontes.
+Versão focada apenas em **jogos, mods, Minecraft e aplicativos**.
 
-## Ícones e miniaturas
+## Resultados diretos dentro do site
 
-A opção **Mostrar ícones/prévias** fica na barra lateral.
+- GitHub Releases — tenta mostrar os arquivos reais de releases; se não houver, usa ZIP do repositório.
+- Modrinth — arquivos de mods/modpacks/projetos.
+- F-Droid — APK da versão sugerida.
 
-Quando disponível, o OmniSearch usa:
-- miniatura real de imagens do Wikimedia Commons;
-- ícone do projeto no Modrinth;
-- avatar do repositório/autor no GitHub;
-- ícone de projeto do GitLab;
-- capa/miniatura do Internet Archive;
-- prévia de imagens locais importadas.
+## Pesquisas especializadas abertas no próprio site
 
-Quando a fonte não fornece uma imagem, aparece um ícone baseado na extensão do arquivo.
+- MCPEDL
+- CurseForge
+- GameBanana
+- itch.io
+- APKMirror
+- Uptodown
+- APKPure
+- Aptoide
 
-## Fontes
+Esses sites são abertos em uma nova aba porque um site estático no GitHub Pages não consegue copiar de forma confiável os resultados de todos eles para dentro da página sem API/CORS ou autenticação.
 
-### Já existentes
-- Internet Archive
-- Wikimedia Commons
-- GitHub
-- Modrinth
-- Hugging Face
-- npm
-- Zenodo
-- OpenAlex
+## MediaFire Finder
 
-### Novas
-- GitLab
-- Maven Central
-- crates.io
-- RubyGems
-- Packagist
+A seção MediaFire Finder cria pesquisas como:
 
-Todas podem ser ligadas ou desligadas separadamente.
+`site:mediafire.com/file/ "sua pesquisa" "apk"`
 
-## Atualizar o GitHub Pages
+Ela oferece Google, Bing e DuckDuckGo, além de uma opção para pesquisar pastas públicas.
 
-Substitua na raiz do repositório:
+O site não rastreia nem indexa o MediaFire diretamente.
+
+## Publicar no GitHub Pages
+
+Substitua na raiz do seu repositório:
+
 - `index.html`
 - `sw.js`
 - `manifest.webmanifest`
 - `README.md`
 
-Depois faça o commit. O GitHub Pages republica automaticamente.
-
-## Observação
-
-O site continua sendo 100% estático no GitHub Pages. As fontes usam APIs públicas diretamente do navegador. Se uma API mudar, aplicar limite de requisições ou bloquear CORS, apenas aquela fonte pode deixar de responder temporariamente.
+Faça o commit. O GitHub Pages atualiza automaticamente.
