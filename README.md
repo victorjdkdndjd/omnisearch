@@ -1,36 +1,52 @@
-# OmniSearch Files — GitHub Pages Edition
+# OmniSearch Files+ — GitHub Pages
 
-Esta versão mostra **somente arquivos**, não resultados de páginas comuns.
+Nova versão com **ícones/prévias de arquivos** e mais fontes.
 
-## Fontes incluídas
+## Ícones e miniaturas
 
+A opção **Mostrar ícones/prévias** fica na barra lateral.
+
+Quando disponível, o OmniSearch usa:
+- miniatura real de imagens do Wikimedia Commons;
+- ícone do projeto no Modrinth;
+- avatar do repositório/autor no GitHub;
+- ícone de projeto do GitLab;
+- capa/miniatura do Internet Archive;
+- prévia de imagens locais importadas.
+
+Quando a fonte não fornece uma imagem, aparece um ícone baseado na extensão do arquivo.
+
+## Fontes
+
+### Já existentes
 - Internet Archive
 - Wikimedia Commons
-- GitHub (ZIP do código-fonte)
+- GitHub
 - Modrinth
 - Hugging Face
 - npm
 - Zenodo
-- OpenAlex (somente trabalhos com PDF direto)
-- Arquivos locais importados pelo usuário
+- OpenAlex
 
-## Atualizar seu site atual
+### Novas
+- GitLab
+- Maven Central
+- crates.io
+- RubyGems
+- Packagist
 
-Substitua estes arquivos na raiz do repositório:
+Todas podem ser ligadas ou desligadas separadamente.
 
+## Atualizar o GitHub Pages
+
+Substitua na raiz do repositório:
 - `index.html`
 - `sw.js`
 - `manifest.webmanifest`
 - `README.md`
 
-O GitHub Pages publica a nova versão automaticamente após o commit.
-
-## Filtros
-
-Há filtros para Minecraft, documentos, imagens, áudio/vídeo, compactados, código/dados, modelos 3D e apps/executáveis.
-
-Arquivos potencialmente executáveis ou compactados não são automaticamente removidos; recebem aviso visual.
+Depois faça o commit. O GitHub Pages republica automaticamente.
 
 ## Observação
 
-Como o site roda apenas no GitHub Pages, ele depende das APIs públicas aceitarem chamadas diretas do navegador. Uma fonte pode ficar temporariamente indisponível por CORS, limite de requisições ou mudanças na API.
+O site continua sendo 100% estático no GitHub Pages. As fontes usam APIs públicas diretamente do navegador. Se uma API mudar, aplicar limite de requisições ou bloquear CORS, apenas aquela fonte pode deixar de responder temporariamente.

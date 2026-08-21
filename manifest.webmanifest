@@ -1,9 +1,9 @@
 {
-  "name": "OmniSearch Files",
-  "short_name": "OmniFiles",
+  "name": "OmniSearch Files+",
+  "short_name": "OmniFiles+",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#080c12",
   "theme_color": "#090d14",
-  "description": "Buscador de arquivos diretos hospedado no GitHub Pages."
+  "description": "Buscador de arquivos com ícones/prévias e múltiplas fontes, hospedado no GitHub Pages."
 }
